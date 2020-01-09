@@ -1,0 +1,15 @@
+Compiling EasyMock in Eclipse 3.0 and above should work right away.
+
+To build EasyMock with Ant,
+- copy junit.jar of JUnit 3.8.1 to ./lib/junit.jar
+- copy clover.jar of Clover 1.3.8 to ./lib/clover.jar
+- copy your clover license file to ./lib/clover.license
+- add ./lib/junit.jar and .lib/clover.jar to your Ant home
+- if you do not work with Mac OS X 10.4,
+  copy easymockbuild.properties to your home directory
+  and change the properties in the copy according to your environment
+- run ant ;-)
+
+Troubleshooting
+- if the javadoc task fails, add the path to the javadoc executable to your PATH variable
+- if the javac task fails, add tools.jar to your Ant home

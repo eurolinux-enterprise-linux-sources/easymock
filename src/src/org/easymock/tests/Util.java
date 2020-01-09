@@ -1,0 +1,12 @@
+package org.easymock.tests;
+
+import java.io.PrintWriter;
+import java.io.StringWriter;
+
+public class Util {
+    public static String getStackTrace(Throwable throwable) {
+        StringWriter stackTrace = new StringWriter();
+        throwable.printStackTrace(new PrintWriter(stackTrace));
+        return stackTrace.getBuffer().toString();
+    }
+}

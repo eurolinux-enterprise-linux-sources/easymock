@@ -1,0 +1,21 @@
+News in EasyMock 1.2 (since 1.1):
+
+- EasyMock is released in two versions: 
+  One for Java 1.3 and above, and one for Java 1.5
+
+Changes in both versions: 
+- order of arguments for ArgumentsMatcher is like in EasyMock 1.0 now
+- stack traces are now only cut if the exception is thrown from EasyMock
+- convenience methods expectAndDefaultReturn() and expectAndDefaultThrow()
+  allow setting default return values and throwables in one line of code
+- hashCode() implementation is changed for better performance
+- added Clover coverage reports
+
+New features in the Java 1.5 version:
+- support for VarArgs
+- type safety: expectAndReturn() and expectAndDefaultReturn() for Objects
+  now check whether the given return value is applicable. Trying
+  control.expectAndReturn(mock.getString(), new Object())
+  will now generate an error at compile time instead of runtime.  
+- MockControl uses generics now, the mock object needs not to be casted
+  anymore
