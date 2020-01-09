@@ -30,7 +30,7 @@
 
 Name:           easymock
 Version:        1.2
-Release:        21%{?dist}
+Release:        22%{?dist}
 Epoch:          0
 Summary:        Easy mock objects
 Group:          Development/Libraries
@@ -121,6 +121,9 @@ cp -p %{SOURCE1} $RPM_BUILD_ROOT%{_mavenpomdir}/JPP-%{name}.pom
 %{_javadocdir}/%{name}
 
 %changelog
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 01.2-22
+- Mass rebuild 2013-12-27
+
 * Fri Jun 28 2013 Mikolaj Izdebski <mizdebsk@redhat.com> - 0:1.2-21
 - Rebuild to regenerate API documentation
 - Resolves: CVE-2013-1571
